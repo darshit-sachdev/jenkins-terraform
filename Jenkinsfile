@@ -7,8 +7,8 @@
     stages {
       stage('TF Init&Plan') {
         steps {
-          sh 'terraform init'
-          sh 'terraform plan'
+          sh '/Users//dsachdev/Terraform/terraform init'
+          sh '/Users//dsachdev/Terraform/terraform plan'
         }      
       }
 
@@ -22,7 +22,7 @@
 
       stage('TF Apply') {
         steps {
-          sh 'terraform apply -auto-approve'
+          sh '/Users//dsachdev/Terraform/terraform apply -auto-approve'
         }
       }
     } 
