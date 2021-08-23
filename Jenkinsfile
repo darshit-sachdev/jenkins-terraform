@@ -7,8 +7,8 @@
     stages {
       stage('TF Init&Plan') {
         steps {
-          bat 'terraform init'
-          bat 'terraform plan'
+          sh 'terraform init'
+          sh 'terraform plan'
         }      
       }
 
@@ -22,7 +22,7 @@
 
       stage('TF Apply') {
         steps {
-          bat 'terraform apply -auto-approve'
+          sh 'terraform apply -auto-approve'
         }
       }
     } 
